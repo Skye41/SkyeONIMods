@@ -61,15 +61,6 @@ namespace GravitasLabReplica.BuildingConfigs
             go.AddOrGet<AnimTileable>().objectLayer = ObjectLayer.Backwall;
             go.AddComponent<ZoneTile>();
             BuildingConfigManager.Instance.IgnoreDefaultKComponent(typeof(RequiresFoundation), prefab_tag);
-            
-            //go.GetComponent<KPrefabID>().AddTag(GameTags.Backwall);//GameTags.Gravitas
-
-            //go.AddOrGet<AnimTileable>().objectLayer = ObjectLayer.Backwall;
-            //go.AddComponent<ZoneTile>();
-            //go.GetComponent<PrimaryElement>().SetElement(SimHashes.Granite);
-            //go.GetComponent<PrimaryElement>().Temperature = 273f;
-
-            //BuildingConfigManager.Instance.IgnoreDefaultKComponent(typeof(RequiresFoundation), prefab_tag);
         }
 
         public override void DoPostConfigureComplete(GameObject go)

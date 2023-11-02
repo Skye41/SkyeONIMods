@@ -30,41 +30,6 @@ namespace GravitasLabReplica
                     AddBuildingStrings(Id, DisplayName, Description, Effect);
                     ModUtil.AddBuildingToPlanScreen(Category, Id);
                 }
-
-                //AddBuildingStrings(LabWallConfig.Id, LabWallConfig.DisplayName, LabWallConfig.Description, LabWallConfig.Effect);
-                //AddBuildingStrings(LabWindowVConfig.Id, LabWindowVConfig.DisplayName, LabWindowVConfig.Description, LabWindowVConfig.Effect);
-                //AddBuildingStrings(LabWindowHConfig.Id, LabWindowHConfig.DisplayName, LabWindowHConfig.Description, LabWindowHConfig.Effect);
-                //AddBuildingStrings(WallConfig.Id, WallConfig.DisplayName, WallConfig.Description, WallConfig.Effect);
-
-                //AddBuildingStrings(CeilingRobotConfig.Id, CeilingRobotConfig.DisplayName, CeilingRobotConfig.Description, CeilingRobotConfig.Effect);
-                //AddBuildingStrings(DeskPodiumConfig.Id, DeskPodiumConfig.DisplayName, DeskPodiumConfig.Description, DeskPodiumConfig.Effect);
-                //AddBuildingStrings(EletronicDisplayConfig.Id, EletronicDisplayConfig.DisplayName, EletronicDisplayConfig.Description, EletronicDisplayConfig.Effect);
-                //AddBuildingStrings(FirstAidKitConfig.Id, FirstAidKitConfig.DisplayName, FirstAidKitConfig.Description, FirstAidKitConfig.Effect);
-                //AddBuildingStrings(FloorRobotConfig.Id, FloorRobotConfig.DisplayName, FloorRobotConfig.Description, FloorRobotConfig.Effect);
-
-                //AddBuildingStrings(HandScannerConfig.Id, HandScannerConfig.DisplayName, HandScannerConfig.Description, HandScannerConfig.Effect);
-                //AddBuildingStrings(LabShelfConfig.Id, LabShelfConfig.DisplayName, LabShelfConfig.Description, LabShelfConfig.Effect);
-                //AddBuildingStrings(LabDeskConfig.Id, LabDeskConfig.DisplayName, LabDeskConfig.Description, LabDeskConfig.Effect);
-                //AddBuildingStrings(PosterConfig.Id, PosterConfig.DisplayName, PosterConfig.Description, PosterConfig.Effect);
-                //AddBuildingStrings(RoboticTableConfig.Id, RoboticTableConfig.DisplayName, RoboticTableConfig.Description, RoboticTableConfig.Effect);
-
-                // GameStrings.PlanMenuCategory.Furniture
-                //ModUtil.AddBuildingToPlanScreen("Utilities", LabWallConfig.Id);
-                //ModUtil.AddBuildingToPlanScreen("Utilities", LabWindowVConfig.Id);
-                //ModUtil.AddBuildingToPlanScreen("Utilities", LabWindowHConfig.Id);
-                //ModUtil.AddBuildingToPlanScreen("Utilities", WallConfig.Id);
-
-                //ModUtil.AddBuildingToPlanScreen("Furniture", CeilingRobotConfig.Id);
-                //ModUtil.AddBuildingToPlanScreen("Furniture", DeskPodiumConfig.Id);
-                //ModUtil.AddBuildingToPlanScreen("Furniture", EletronicDisplayConfig.Id);
-                //ModUtil.AddBuildingToPlanScreen("Furniture", FirstAidKitConfig.Id);
-                //ModUtil.AddBuildingToPlanScreen("Furniture", FloorRobotConfig.Id);
-
-                //ModUtil.AddBuildingToPlanScreen("Furniture", HandScannerConfig.Id);
-                //ModUtil.AddBuildingToPlanScreen("Furniture", LabShelfConfig.Id);
-                //ModUtil.AddBuildingToPlanScreen("Furniture", LabDeskConfig.Id);
-                //ModUtil.AddBuildingToPlanScreen("Furniture", PosterConfig.Id);
-                //ModUtil.AddBuildingToPlanScreen("Furniture", RoboticTableConfig.Id); 
             }
 
             public static void Postfix()

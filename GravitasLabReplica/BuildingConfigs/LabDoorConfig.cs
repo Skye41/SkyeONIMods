@@ -7,9 +7,6 @@ namespace GravitasLabReplica.BuildingConfigs
 {
     public class LabDoorConfig : IBuildingConfig
     {
-        //public static LocString NAME = (LocString)UI.FormatAsLink("Mechanized Airlock", nameof(PRESSUREDOOR));
-        //public static LocString DESC = (LocString)"Mechanized airlocks open and close more quickly than other types of door.";
-        //public static LocString EFFECT = (LocString)("Blocks " + UI.FormatAsLink("Liquid", "ELEMENTS_LIQUID") + " and " + UI.FormatAsLink("Gas", "ELEMENTS_GAS") + " flow, maintaining pressure between areas.\n\nFunctions as a " + UI.FormatAsLink("Manual Airlock", "MANUALPRESSUREDOOR") + " when no " + UI.FormatAsLink("Power", "POWER") + " is available.\n\nWild " + UI.FormatAsLink("Critters", "CRITTERS") + " cannot pass through doors.");
         public const string Id = "SkyesLabDoor";
         public const string DisplayName = "Lab Door";
         public const string Description = "Gravitas Lab Door Replica.\n\nAn office door to an office that no longer exists.\nExcept now it does again. \nImproved with sealing.";
@@ -49,36 +46,13 @@ namespace GravitasLabReplica.BuildingConfigs
             buildingDef.LogicInputPorts = DoorConfig.CreateSingleInputPortList(new CellOffset(0, 0));
             SoundEventVolumeCache.instance.AddVolume("gravitas_door_internal_kanim", "GravitasDoorInternal_open", NOISE_POLLUTION.NOISY.TIER2);
             SoundEventVolumeCache.instance.AddVolume("gravitas_door_internal_kanim", "GravitasDoorInternal_close", NOISE_POLLUTION.NOISY.TIER2);
-            //buildingDef.AudioSize = "small";
-            //buildingDef.DefaultAnimState = "on";
-            //buildingDef.ObjectLayer = ObjectLayer.Building;
-            //buildingDef.LogicInputPorts = GravitasDoorConfig.CreateSingleInputPortList(new CellOffset(0, 0));
-
+            
             return buildingDef;
         }
-
-        //public override void ConfigureBuildingTemplate(GameObject go, Tag prefab_tag)
-        //{
-        //    go.GetComponent<KPrefabID>().AddTag(GameTags.Door);//GameTags.Gravitas
-
-        //    Door door = go.AddOrGet<Door>();
-        //    door.unpoweredAnimSpeed = 1f;
-        //    door.doorType = Door.DoorType.Sealed;
-        //    door.doorOpeningSoundEventName = "GravitasDoorInternal_open";
-        //    door.doorClosingSoundEventName = "GravitasDoorInternal_close";
-        //    go.AddOrGet<ZoneTile>();
-        //    go.AddOrGet<AccessControl>().controlEnabled = true;
-        //    go.AddOrGet<CopyBuildingSettings>().copyGroupTag = GameTags.Door;
-        //    go.AddOrGet<Workable>().workTime = 3f;
-        //    go.AddOrGet<KBoxCollider2D>();
-        //    Prioritizable.AddRef(go);
-        //    Object.DestroyImmediate((Object)go.GetComponent<BuildingEnabledButton>());
-        //}
 
         public override void DoPostConfigureComplete(GameObject go)
         {
             Door door = go.AddOrGet<Door>();
-            //door.doorType = Door.DoorType.Sealed;
             door.hasComplexUserControls = true;
             door.unpoweredAnimSpeed = 0.65f;
             door.poweredAnimSpeed = 5f;
